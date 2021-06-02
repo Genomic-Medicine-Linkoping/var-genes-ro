@@ -26,3 +26,9 @@ find_dups:
 	$(FASTADIFF) -1 $(TEMP_DIAG_GENES) -2 $(DIAG_GENES) ; \
 	rm -f $(TEMP_DIAG_GENES))
 
+remove_dup_phenos:
+	# Remove duplicate entries
+	tail -n +2 raw/Diagnostic_genes_v3_phenotypes.csv | sort | uniq > phenotypes.csv ; \
+	# Insert csv header
+	sed -i '1 i\
+	name,phenotype' phenotypes.csv
