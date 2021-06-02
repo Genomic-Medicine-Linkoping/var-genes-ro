@@ -19,7 +19,7 @@ prepare_genes:
 check_files:
 	file diagnostic_genes.fa raw/Diagnostic_genes_v3.fa raw/Diagnostic_genes_v3_phenotypes.csv
 
-find_duplicates:
+find_dups:
 	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
 	$(SEQKIT) replace -p ":filter.+" | \
 	$(SEQKIT) rename -n > $(TEMP_DIAG_GENES) ; \
