@@ -14,7 +14,8 @@ prepare_genes:
 	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
 	$(SEQKIT) replace -p ":filter.+" | \
 	$(SEQKIT) rmdup --by-seq | \
-	$(SEQKIT) rename -n > $(DIAG_GENES))
+	$(SEQKIT) rename -n | \
+	$(SEQKIT) replace -p '(^.+)\s\S+' -r '$$1 dupID' > $(DIAG_GENES))
 
 check_files:
 	file diagnostic_genes.fa raw/Diagnostic_genes_v3.fa raw/Diagnostic_genes_v3_phenotypes.csv
