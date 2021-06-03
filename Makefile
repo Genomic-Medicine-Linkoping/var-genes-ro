@@ -7,8 +7,10 @@ CONDA_ACTIVATE = source $$(conda info --base)/etc/profile.d/conda.sh ; conda act
 FASTACLEAN = ~/miniconda3/envs/var-genes-ro/bin/fastaclean
 FASTADIFF = ~/miniconda3/envs/var-genes-ro/bin/fastadiff
 SEQKIT = ~/miniconda3/envs/var-genes-ro/bin/seqkit
-DIAG_GENES = diagnostic_genes.fa
+DIAG_GENES = proc/diagnostic_genes.fa
 TEMP_DIAG_GENES = temp_diagnostic_genes.fa
+RAW_PHENOS = raw/Diagnostic_genes_v3_phenotypes.csv
+PHENOS = proc/phenotypes.csv
 
 prepare_genes:
 	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
@@ -29,7 +31,10 @@ find_dups:
 
 remove_dup_phenos:
 	# Remove duplicate entries
-	tail -n +2 raw/Diagnostic_genes_v3_phenotypes.csv | sort | uniq > phenotypes.csv ; \
+	tail -n +2 $(RAW_PHENOS) | sort | uniq > $(PHENOS) ; \
 	# Insert csv header
 	sed -i '1 i\
-	name,phenotype' phenotypes.csv
+	name,phenotype' $(PHENOS)
+
+clean:
+	rm -f proc/*
