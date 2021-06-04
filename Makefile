@@ -10,6 +10,10 @@ SEQKIT = ~/miniconda3/envs/var-genes-ro/bin/seqkit
 DIAG_GENES = proc/diagnostic_genes.fa
 TEMP_DIAG_GENES = temp_diagnostic_genes.fa
 RAW_PHENOS = raw/Diagnostic_genes_v3_phenotypes.csv
+RAW_SEQS = raw/Diagnostic_genes_v3.fa
+CODING = coding.fa
+NONC = non-coding.fa
+BOTH = coding_non-coding.fa
 PHENOS = proc/phenotypes.csv
 
 prepare_genes:
@@ -20,7 +24,7 @@ prepare_genes:
 	$(SEQKIT) replace -p '(^.+)\s\S+' -r '$$1 dupID' > $(DIAG_GENES))
 
 check_files:
-	file diagnostic_genes.fa raw/Diagnostic_genes_v3.fa raw/Diagnostic_genes_v3_phenotypes.csv
+	file $(BOTH) $(RAW_SEQS) $(RAW_PHENOS)
 
 find_dups:
 	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
