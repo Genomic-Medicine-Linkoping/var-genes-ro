@@ -35,7 +35,7 @@ find_dups:
 
 remove_dup_phenos:
 	# Remove duplicate entries
-	tail -n +2 $(RAW_PHENOS) | sort | uniq > $(PHENOS) ; \
+	tail -n +2 $(RAW_PHENOS) | sort | uniq > $(PHENOS)
 	# Insert csv header
 	sed -i '1 i\
 	name,phenotype' $(PHENOS)
