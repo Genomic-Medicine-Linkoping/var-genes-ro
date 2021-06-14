@@ -63,6 +63,7 @@ check_files:
 	file $(BOTH) $(RAW_SEQS) $(RAW_PHENOS)
 
 # Compare the fasta files
+find_dups: prepare_genes
 	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
 	$(SEQKIT) replace -p ":filter.+" | \
 	$(SEQKIT) rename -n > $(TEMP_DIAG_GENES) ; \
