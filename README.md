@@ -12,6 +12,7 @@ This repository contains:
 
 - `proc/diagnostic_genes.fa`: Antibiotic and resistance genes file
 - `proc/phenotypes.csv`: Csv file containing phenotypes related with genes
+- `proc/*.{html,md}`: Html and markdown files of Jupyter notebooks. These are here just for archiving purposes.
 
 The processed intermediary files were produced with jupyter notebooks in `bin`-directory inside conda environment defined by `bin/exp.yml`.
 
