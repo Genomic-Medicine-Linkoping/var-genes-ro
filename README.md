@@ -29,6 +29,10 @@ The phenotype information is appended in the fasta headers after `|||` in order 
 - `bin/add_phenos_to_fasta.ipynb`: This Jupyter notebook appends corresponding phenotype data to fasta headers. This makes the phenotype data more accessible in downstream analyses.
 - `bin/gather_seqs.ipynb`: This Jupyter notebook reads a list of sequence identifiers from `proc/phenotypes.csv` and gathers those sequences into `non-coding.fa` fasta file as well as the ones left over to `coding.fa`.
 
+5. Makefile
+
+- `Makefile`: This runs everything that needs to be run. E.g. `make` command will create all final and intermediary files.
+
 This database is used in [JASEN](https://github.com/Genomic-Medicine-Linkoping/gms-JASEN/tree/ro-implementation) pipeline at the university hospital of Linköping (Region Östergötland), Sweden.
 
 **Note: It is strongly recommended to perform verification of these sequences before taking them in to use in your own clinical setting.**
