@@ -51,6 +51,13 @@ prepare_genes:
 	$(SEQKIT) replace -p '(^.+)\s\S+' -r '$$1 dupID' > $(DIAG_GENES))
 
 # Remove duplicate rows from raw phenotypes csv
+remove_dup_phenos:
+	# Remove duplicate entries
+	tail -n +2 $(RAW_PHENOS) | sort | uniq > $(PHENOS)
+	# Insert csv header
+	sed -i '1 i\
+	name,phenotype' $(PHENOS)
+
 # Print out basic information about the raw data
 check_files:
 	file $(BOTH) $(RAW_SEQS) $(RAW_PHENOS)
