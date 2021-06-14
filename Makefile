@@ -21,6 +21,22 @@ CODING = coding.fa
 NONC = non-coding.fa
 BOTH = coding_non-coding.fa
 
+
+# Run Jupyter notebooks
+exec_ipynbs:
+	$(CONDA_ACTIVATE) ; \
+	jupyter nbconvert --inplace --to notebook --execute bin/add_phenos_to_fasta.ipynb ; \
+	jupyter nbconvert --inplace --to notebook --execute bin/gather_seqs.ipynb
+
+# Create rendered files for archiving purposes
+archive_ipynbs:
+	$(CONDA_ACTIVATE) ; \
+	jupyter nbconvert --to html bin/add_phenos_to_fasta.ipynb bin/add_phenos_to_fasta.ipynb ; \
+	jupyter nbconvert --to markdown bin/add_phenos_to_fasta.ipynb bin/add_phenos_to_fasta.ipynb ; \
+	jupyter nbconvert --to html bin/gather_seqs.ipynb bin/gather_seqs.ipynb ; \
+	jupyter nbconvert --to markdown bin/gather_seqs.ipynb bin/gather_seqs.ipynb
+	mv bin/*.{md,html} proc/
+
 prepare_genes:
 	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
 	$(SEQKIT) replace -p ":filter.+" | \
