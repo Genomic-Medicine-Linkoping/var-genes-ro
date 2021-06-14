@@ -23,6 +23,6 @@ The processed intermediary files were produced with jupyter notebooks in `bin`-d
 
 The phenotype information is appended in the fasta headers after `|||`.
 
-This database is used in [JASEN](https://github.com/Genomic-Medicine-Linkoping/gms-JASEN/tree/ro-implementation) pipeline at the university hospital of Linköping, Sweden.
+This database is used in [JASEN](https://github.com/Genomic-Medicine-Linkoping/gms-JASEN/tree/ro-implementation) pipeline at the university hospital of Linköping (Region Östergötland), Sweden.
 
 **Note: It is strongly recommended to perform verification of these sequences before taking them in to use in your own clinical setting.**
