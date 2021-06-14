@@ -1,28 +1,28 @@
-# Virulence and Antibiotic Resistance Genes used in Region Östergötland
+# Virulence and Antibiotic Resistance Genes database in Region Östergötland
 
 This repository contains:
 
 1. Raw (unprocessed) virulence and antibiotic resistance (VAR) sequence files
 
-- Antibiotic and resistance genes file: `raw/Diagnostic_genes_v3.fa`
-- Csv file containing phenotypes related with genes: `raw/Diagnostic_genes_v3_phenotypes.csv`
-- A list of sequence names estimated by [Ariba](https://github.com/sanger-pathogens/ariba `Ariba Github page`) to be non-coding when running [ariba prepareref](https://github.com/sanger-pathogens/ariba/wiki/Task:-prepareref) command on them: `raw/non-coding.txt`  
+- `raw/Diagnostic_genes_v3.fa`: Antibiotic and resistance genes file
+- `raw/Diagnostic_genes_v3_phenotypes.csv`: Csv file containing phenotypes related with genes
+- `raw/non-coding.txt`: A list of sequence names estimated by [Ariba](https://github.com/sanger-pathogens/ariba) to be non-coding when running [ariba prepareref](https://github.com/sanger-pathogens/ariba/wiki/Task:-prepareref) command on them
 
 2. Processed (intermediary) VAR sequence files 
 
-- Antibiotic and resistance genes file: `proc/diagnostic_genes.fa`
-- Csv file containing phenotypes related with genes: `proc/phenotypes.csv`
+- `proc/diagnostic_genes.fa`: Antibiotic and resistance genes file
+- `proc/phenotypes.csv`: Csv file containing phenotypes related with genes
 
 The processed intermediary files were produced with jupyter notebooks in `bin`-directory inside conda environment defined by `bin/exp.yml`.
 
 3. The final VAR sequence files
 
-- According to Ariba estimated coding sequences augmented by phenotype information in the fasta headers: `coding.fa` 
-- According to Ariba estimated non-coding sequences augmented by phenotype information in the fasta headers: `non-coding.fa`
-- A concatenation of the two above: `coding_non-coding.fa`
+- `coding.fa`: According to Ariba estimated coding sequences augmented by phenotype information in the fasta headers 
+- `non-coding.fa`: According to Ariba estimated non-coding sequences augmented by phenotype information in the fasta headers
+- `coding_non-coding.fa`: A concatenation of the two above
 
 The phenotype information is appended in the fasta headers after `|||`.
 
-**Note that it is strongly recommended to perform verification of these sequences before taking them in to use in your own clinical setting.**
+This database is used in [JASEN](https://github.com/Genomic-Medicine-Linkoping/gms-JASEN/tree/ro-implementation) pipeline at the university hospital of Linköping, Sweden.
 
-These genes are used in [gms-JASEN pipeline](https://github.com/Genomic-Medicine-Linkoping/gms-JASEN/tree/ro-implementation) (`ro-implementation` branch).
+**Note that it is strongly recommended to perform verification of these sequences before taking them in to use in your own clinical setting.**
