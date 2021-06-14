@@ -21,6 +21,8 @@ CODING = coding.fa
 NONC = non-coding.fa
 BOTH = coding_non-coding.fa
 
+all: prepare_genes remove_dup_phenos exec_ipynbs archive_ipynbs
+	@echo "Created all intermediary and final files."
 
 # Run Jupyter notebooks
 exec_ipynbs:
