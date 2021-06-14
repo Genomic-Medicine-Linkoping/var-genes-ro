@@ -37,6 +37,12 @@ archive_ipynbs:
 	jupyter nbconvert --to markdown bin/gather_seqs.ipynb bin/gather_seqs.ipynb
 	mv bin/*.{md,html} proc/
 
+# 1. Clean raw fasta file
+# 2. Remove automatically added ":filter.+" text from fasta headers
+# 3. Remove duplicate sequences
+# 4. Rename duplicate fasta headers
+# 5. Remove from renamed duplicated fasta headers difficult to parse duplicated
+# information and exchange it with "dupID"-text
 prepare_genes:
 	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
 	$(SEQKIT) replace -p ":filter.+" | \
@@ -44,23 +50,19 @@ prepare_genes:
 	$(SEQKIT) rename -n | \
 	$(SEQKIT) replace -p '(^.+)\s\S+' -r '$$1 dupID' > $(DIAG_GENES))
 
+# Remove duplicate rows from raw phenotypes csv
+# Print out basic information about the raw data
 check_files:
 	file $(BOTH) $(RAW_SEQS) $(RAW_PHENOS)
 
-find_dups:
+# Compare the fasta files
 	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
 	$(SEQKIT) replace -p ":filter.+" | \
 	$(SEQKIT) rename -n > $(TEMP_DIAG_GENES) ; \
 	$(FASTADIFF) -1 $(TEMP_DIAG_GENES) -2 $(DIAG_GENES) ; \
 	rm -f $(TEMP_DIAG_GENES))
 
-remove_dup_phenos:
-	# Remove duplicate entries
-	tail -n +2 $(RAW_PHENOS) | sort | uniq > $(PHENOS)
-	# Insert csv header
-	sed -i '1 i\
-	name,phenotype' $(PHENOS)
-
+# Do some sanity checks
 sanity_check:
 	@echo
 	# Check number of unique gene IDs in raw and processed files
@@ -88,5 +90,6 @@ sanity_check:
 	<(tail -n +2 $(RAW_PHENOS) | cut -f 1 -d, | sort | uniq) | \
 	tee >(tail -n 5) >(head -n 5; cat > /dev/null) > /dev/null
 
+# Remove intermediary files
 clean:
 	rm -f proc/*
