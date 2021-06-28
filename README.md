@@ -33,6 +33,6 @@ The phenotype information is appended in the fasta headers after `|||` in order 
 
 - `Makefile`: This runs everything that needs to be run. E.g. `make` command will create all final and intermediary files.
 
-This database is used in [JASEN](https://github.com/Genomic-Medicine-Linkoping/gms-JASEN/tree/ro-implementation) pipeline at the university hospital of Linköping (Region Östergötland), Sweden.
+This database is used in [JASEN](https://github.com/Genomic-Medicine-Linkoping/JASEN/tree/ro-implementation) pipeline at the university hospital of Linköping (Region Östergötland), Sweden.
 
 **Note: It is strongly recommended to perform verification of these sequences before taking them in to use in your own clinical setting.**
