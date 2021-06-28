@@ -1,0 +1,3 @@
+# Ignore archived files from language statistics
+proc/*.html linguist-vendored
+proc/*.md linguist-vendored
