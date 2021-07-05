@@ -10,3 +10,6 @@ dependencies:
   - biopython = 1.78
   - nbconvert = 5.6.0
   - ariba = 2.14.6
+  # Required for bowtie2 to work
+  # https://forum.biobakery.org/t/workflow-conda-install-bowtie-2-issue-bowtie2-align-s-error-while-loading-shared-libraries-libtbb-so-2/1831
+  - tbb = 2020.2
