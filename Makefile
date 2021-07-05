@@ -5,10 +5,10 @@ CURRENT_CONDA_ENV_NAME = notebook
 CONDA_ACTIVATE = source $$(conda info --base)/etc/profile.d/conda.sh ; conda activate ; conda activate $(CURRENT_CONDA_ENV_NAME)
 
 # Exonerate utilities: https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate
-FASTACLEAN = ~/miniconda3/envs/var-genes-ro/bin/fastaclean
-FASTADIFF = ~/miniconda3/envs/var-genes-ro/bin/fastadiff
+FASTACLEAN = $$(conda info --base)/envs/$(CURRENT_CONDA_ENV_NAME)/bin/fastaclean
+FASTADIFF = $$(conda info --base)/envs/$(CURRENT_CONDA_ENV_NAME)/bin/fastadiff
 # Seqkit utilities: https://bioinf.shenwei.me/seqkit/usage/
-SEQKIT = ~/miniconda3/envs/var-genes-ro/bin/seqkit
+SEQKIT = $$(conda info --base)/envs/$(CURRENT_CONDA_ENV_NAME)/bin/seqkit
 # Raw and intermediary fasta files
 RAW_SEQS = raw/Diagnostic_genes_v3.fa
 DIAG_GENES = proc/diagnostic_genes.fa
