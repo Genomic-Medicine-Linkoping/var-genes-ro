@@ -54,11 +54,9 @@ prepare_genes:
 
 # Remove duplicate rows from raw phenotypes csv
 remove_dup_phenos:
-	# Remove duplicate entries
-	tail -n +2 $(RAW_PHENOS) | sort | uniq > $(PHENOS)
-	# Insert csv header
-	sed -i '1 i\
-	name,phenotype' $(PHENOS)
+	@(tail -n +2 $(RAW_PHENOS) | sort | uniq > $(PHENOS)) # Remove duplicate entries
+	@(sed -i '1 i\
+	name,phenotype' $(PHENOS)) # Insert csv header
 
 # Print out basic information about the raw data
 check_files:
