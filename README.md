@@ -33,9 +33,11 @@ The phenotype information is appended in the fasta headers after `|||` in order 
 
 5. Makefile
 
-- `Makefile`: This runs everything that needs to be run. E.g. `make` command will create all final and intermediary files.
+- `Makefile`: This runs most of what needs to be run.
 
-This database is used in [JASEN](https://github.com/Genomic-Medicine-Linkoping/JASEN/tree/ro-implementation) pipeline at the university hospital of Linköping (Region Östergötland), Sweden.
+6. Environment definition file
+
+- `environment.yml` defines the environment for the binder instance that can be launched by clicking the badge in the main README.md file.
 
 ## How to add new genes?
 
@@ -51,5 +53,7 @@ This database is used in [JASEN](https://github.com/Genomic-Medicine-Linkoping/J
 9. Add phenotype information in `proc/phenotypes.csv` to fasta headers in `proc/diagenostic_genes.fa` by running `bin/add_phenos_to_fasta.ipynb` jupyter notebook. This updates the file `coding_non-coding.fa`.
 10. Separate update files `non-coding.fa` and `coding.fa` based on `raw/non-coding.txt` file contents using `bin/gather_seqs.ipynb` jupyter notebook.
 11. Finally, download the updated  `non-coding.fa` and `coding.fa` files.
+
+This database is used in [JASEN](https://github.com/Genomic-Medicine-Linkoping/JASEN/tree/ro-implementation) pipeline at the university hospital of Linköping (Region Östergötland), Sweden.
 
 **Note: It is strongly recommended to perform verification of these sequences before taking them in to use in your own clinical setting.**
