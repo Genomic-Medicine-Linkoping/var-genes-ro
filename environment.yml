@@ -1,4 +1,4 @@
-name: var-genes-ro
+name: notebook
 channels:
   - bioconda
   - conda-forge
