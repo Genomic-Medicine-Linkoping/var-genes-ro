@@ -64,7 +64,7 @@ The phenotype information is appended in the fasta headers after `|||` in order 
   ```
 9. Add phenotype information in `proc/phenotypes.csv` to fasta headers in `proc/diagenostic_genes.fa` by running `bin/add_phenos_to_fasta.ipynb` jupyter notebook. This updates the file `coding_non-coding.fa`.
 10. Separate update files `non-coding.fa` and `coding.fa` based on `raw/non-coding.txt` file contents using `bin/gather_seqs.ipynb` jupyter notebook.
-11. Download (and upload to this repository (on the web Github web site or otherwise)) the updated `non-coding.fa` and `coding.fa` files if need be.
+11. Download (and upload to this repository (on the Github web site or otherwise)) the updated `non-coding.fa` and `coding.fa` files if need be.
 
 This database is used in [JASEN](https://github.com/Genomic-Medicine-Linkoping/JASEN/tree/ro-implementation) pipeline at the university hospital of Linköping (Region Östergötland), Sweden.
 
