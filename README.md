@@ -1,5 +1,7 @@
 # Virulence and Antibiotic Resistance Genes database in Region Östergötland
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Genomic-Medicine-Linkoping/var-genes-ro/HEAD)
+
 This repository contains:
 
 1. Raw (unprocessed) virulence and antibiotic resistance (VAR) sequence files
