@@ -1,4 +1,10 @@
 SHELL = /bin/bash
+.ONESHELL:
+#.SHELLFLAGS := -eu -o pipefail -c
+.SHELLFLAGS := -e -o pipefail -c
+.DELETE_ON_ERROR:
+MAKEFLAGS += --warn-undefined-variables
+MAKEFLAGS += --no-builtin-rules
 
 CURRENT_CONDA_ENV_NAME = notebook
 # Note that the extra activate is needed to ensure that the activate floats env to the front of PATH
