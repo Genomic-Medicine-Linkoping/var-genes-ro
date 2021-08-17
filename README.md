@@ -1,6 +1,7 @@
 # Virulence and Antibiotic Resistance Genes database in Region Östergötland
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Genomic-Medicine-Linkoping/var-genes-ro/HEAD)
+[![DOI](https://zenodo.org/badge/372817270.svg)](https://zenodo.org/badge/latestdoi/372817270)
 
 ## Repository contents
 
