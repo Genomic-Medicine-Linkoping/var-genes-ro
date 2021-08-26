@@ -64,6 +64,8 @@ prepare_genes:
 	tr '/' '_' | \
 	$(SEQKIT) replace -p '(^.+)\s\S+' -r '$$1 dupID' > $(DIAG_GENES))
 
+## prepare_phenos: Remove duplicate rows, '(',')' and '/' from raw phenotypes csv
+prepare_phenos:
 	@(tail -n +2 $(RAW_PHENOS) | \
 	sort | \
 	uniq | \
