@@ -18,12 +18,12 @@ FASTADIFF = $$(conda info --base)/envs/$(CURRENT_CONDA_ENV_NAME)/bin/fastadiff
 # Seqkit utilities: https://bioinf.shenwei.me/seqkit/usage/
 SEQKIT = $$(conda info --base)/envs/$(CURRENT_CONDA_ENV_NAME)/bin/seqkit
 # Raw and intermediary fasta files
-RAW_SEQS = raw/Diagnostic_genes_v3.fa
+RAW_SEQS = raw/Diagnostic_genes.fa
 DIAG_GENES = proc/diagnostic_genes.fa
 TEMP_DIAG_GENES = temp_diagnostic_genes.fa
 # Phenotype data
-RAW_PHENOS = raw/Diagnostic_genes_v3_phenotypes.csv
-PHENOS = proc/phenotypes.csv
+RAW_PHENOS = raw/Diagnostic_genes_phenotypes.tsv
+PHENOS = proc/phenotypes.tsv
 # Final fasta files
 CODING = coding.fa
 NONC = non-coding.fa
