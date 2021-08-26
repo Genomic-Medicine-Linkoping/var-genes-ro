@@ -32,13 +32,13 @@ BOTH = coding_non-coding.fa
 all: prepare_genes remove_dup_phenos exec_ipynbs archive_ipynbs
 	@echo "Created all intermediary and final files."
 
-# Run Jupyter notebooks
+## exec_ipynbs: Run Jupyter notebooks in order to produce final files
 exec_ipynbs:
 	$(CONDA_ACTIVATE) ; \
 	jupyter nbconvert --inplace --to notebook --execute bin/add_phenos_to_fasta.ipynb ; \
 	jupyter nbconvert --inplace --to notebook --execute bin/gather_seqs.ipynb
 
-# Create rendered files for archiving purposes
+## archive_ipynbs: Create rendered files for archiving purposes
 archive_ipynbs:
 	$(CONDA_ACTIVATE) ; \
 	jupyter nbconvert --to html bin/add_phenos_to_fasta.ipynb bin/add_phenos_to_fasta.ipynb ; \
@@ -47,30 +47,31 @@ archive_ipynbs:
 	jupyter nbconvert --to markdown bin/gather_seqs.ipynb bin/gather_seqs.ipynb
 	mv bin/*.{md,html} proc/
 
-# 1. Clean raw fasta file
-# 2. Remove automatically added ":filter.+" text from fasta headers
-# 3. Remove duplicate sequences
-# 4. Rename duplicate fasta headers
-# 5. Remove from renamed duplicated fasta headers difficult to parse duplicated
-# information and exchange it with "dupID"-text
+## prepare_genes: Clean multifasta file and save it to proc/ directory
+## 1. Clean raw fasta file
+## 2. Remove automatically added ":filter.+" text from fasta headers
+## 3. Remove duplicate sequences
+## 4. Rename duplicate fasta headers
+## 5. Remove from renamed duplicated fasta headers difficult to parse duplicated
+## information and exchange it with "dupID"-text
 prepare_genes:
-	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
+	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f $(RAW_SEQS) | \
 	$(SEQKIT) replace -p ":filter.+" | \
 	$(SEQKIT) rmdup --by-seq | \
 	$(SEQKIT) rename -n | \
 	$(SEQKIT) replace -p '(^.+)\s\S+' -r '$$1 dupID' > $(DIAG_GENES))
 
-# Remove duplicate rows from raw phenotypes csv
+## remove_dup_phenos: Remove duplicate rows from raw phenotypes csv
 remove_dup_phenos:
 	@(tail -n +2 $(RAW_PHENOS) | sort | uniq > $(PHENOS)) # Remove duplicate entries
 	@(sed -i '1 i\
-	name,phenotype' $(PHENOS)) # Insert csv header
+	name\tphenotype' $(PHENOS)) # Insert tsv header
 
-# Print out basic information about the raw data
+## check_files: Print out basic information about the raw data
 check_files:
 	file $(BOTH) $(RAW_SEQS) $(RAW_PHENOS)
 
-# Compare the fasta files
+## find_dups: Compare the fasta files
 find_dups: prepare_genes
 	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
 	$(SEQKIT) replace -p ":filter.+" | \
@@ -78,7 +79,7 @@ find_dups: prepare_genes
 	$(FASTADIFF) -1 $(TEMP_DIAG_GENES) -2 $(DIAG_GENES) ; \
 	rm -f $(TEMP_DIAG_GENES))
 
-# Do some sanity checks
+## sanity_check: Do some sanity checks
 sanity_check:
 	@echo
 	# Check number of unique gene IDs in raw and processed files
@@ -106,6 +107,10 @@ sanity_check:
 	<(tail -n +2 $(RAW_PHENOS) | cut -f 1 -d, | sort | uniq) | \
 	tee >(tail -n 5) >(head -n 5; cat > /dev/null) > /dev/null
 
-# Remove intermediary files
+## clean: Remove intermediary files
 clean:
 	rm -f proc/*
+
+## help: Show this message
+help:
+	@grep '^##' ./Makefile
