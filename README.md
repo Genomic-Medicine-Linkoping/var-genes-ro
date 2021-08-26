@@ -53,7 +53,7 @@ The phenotype information is appended in the fasta headers after `|||` in order 
   ```
 5. Remove identical duplicate rows: 
   ```bash
-  make remove_dup_phenos
+  make prepare_phenos
   ```
 6. Start a new terminal session.
 7. Run the following in order to examine if there are any sequences that are deemed to be non-coding according to [Ariba](https://github.com/sanger-pathogens/ariba):
