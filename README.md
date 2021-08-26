@@ -29,8 +29,8 @@ The phenotype information is appended in the fasta headers after `|||` in order 
 
 4. Jupyter notebooks used to create final VAR sequences from the intermediary files (see 2. Processed (intermediary) VAR sequence files above)
 
-- `bin/add_phenos_to_fasta.ipynb`: This Jupyter notebook appends corresponding phenotype data to fasta headers. This makes the phenotype data more accessible in downstream analyses.
-- `bin/gather_seqs.ipynb`: This Jupyter notebook reads a list of sequence identifiers from `proc/phenotypes.csv` and gathers those sequences into `non-coding.fa` fasta file as well as the ones left over to `coding.fa`.
+- `bin/add_phenos_to_fasta.ipynb`: This Jupyter notebook appends corresponding phenotype data to fasta headers. This makes the phenotype data more accessible in downstream steps.
+- `bin/gather_seqs.ipynb`: This Jupyter notebook reads a list of sequence identifiers from `raw/non-coding.txt` and gathers those sequences into `non-coding.fa` file from `coding_non-coding.fa` as well as the ones left over to `coding.fa`.
 
 5. Makefile
 
