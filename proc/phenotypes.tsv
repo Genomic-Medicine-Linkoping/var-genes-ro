@@ -1,0 +1,582 @@
+name	phenotype
+blaACC-1	ESBL_M_AmpC
+blaACC-2	ESBL_M_AmpC
+blaACC-4	ESBL_M_AmpC
+blaACT-10	ESBL_M_AmpC
+blaACT-1	ESBL_M_AmpC
+blaACT-3	ESBL_M_AmpC
+blaACT-6	ESBL_M_AmpC
+blaACT-7	ESBL_M_AmpC
+blaACT-9	ESBL_M_AmpC
+blaBEL-1	ESBL_A
+blaBEL-2	ESBL_A
+blaBEL-3	ESBL_A
+blaCMY-10	ESBL_M_AmpC
+blaCMY-11	ESBL_M_AmpC
+blaCMY-12	ESBL_M_AmpC
+blaCMY-14	ESBL_M_AmpC
+blaCMY-16_1_FM995219	ESBL_M_AmpC
+blaCMY-16_2_FJ855437	ESBL_M_AmpC
+blaCMY-1	ESBL_M_AmpC
+blaCMY-2	ESBL_M_AmpC
+blaCMY-38	ESBL_M_AmpC
+blaCMY-3	ESBL_M_AmpC
+blaCMY-42_b	ESBL_M_AmpC
+blaCMY-42_CP023957	ESBL_M_AmpC
+blaCMY-42	ESBL_M_AmpC
+blaCMY-43	ESBL_M_AmpC
+blaCMY-44	ESBL_M_AmpC
+blaCMY-45	ESBL_M_AmpC
+blaCMY-49	ESBL_M_AmpC
+blaCMY-4	ESBL_M_AmpC
+blaCMY-50_FN645444.1	ESBL_M_AmpC
+blaCMY-51	ESBL_M_AmpC
+blaCMY-53	ESBL_M_AmpC
+blaCMY-54	ESBL_M_AmpC
+blaCMY-55	ESBL_M_AmpC
+blaCMY-56	ESBL_M_AmpC
+blaCMY-57	ESBL_M_AmpC
+blaCMY-59	ESBL_M_AmpC
+blaCMY-5	ESBL_M_AmpC
+blaCMY-60	ESBL_M_AmpC
+blaCMY-61	ESBL_M_AmpC
+blaCMY-62	ESBL_M_AmpC
+blaCMY-63	ESBL_M_AmpC
+blaCMY-6	ESBL_M_AmpC
+blaCMY-71	ESBL_M_AmpC
+blaCMY-73	ESBL_M_AmpC
+blaCMY-7	ESBL_M_AmpC
+blaCMY-80	ESBL_M_AmpC
+blaCMY-8	ESBL_M_AmpC
+blaCMY-94	ESBL_M_AmpC
+blaCMY-95	ESBL_M_AmpC
+blaCMY-99	ESBL_M_AmpC
+blaCMY-9	ESBL_M_AmpC
+blaCTX-M-101	ESBL_A
+blaCTX-M-102	ESBL_A
+blaCTX-M-103	ESBL_A
+blaCTX-M-104	ESBL_A
+blaCTX-M-105	ESBL_A
+blaCTX-M-106	ESBL_A
+blaCTX-M-107_JF274244.1	ESBL_A
+blaCTX-M-108_JF274245.1	ESBL_A
+blaCTX-M-109_JF274248	ESBL_A
+blaCTX-M-10	ESBL_A
+blaCTX-M-110	ESBL_A
+blaCTX-M-111	ESBL_A
+blaCTX-M-112	ESBL_A
+blaCTX-M-113	ESBL_A
+blaCTX-M-114	ESBL_A
+blaCTX-M-116	ESBL_A
+blaCTX-M-117	ESBL_A
+blaCTX-M-11	ESBL_A
+blaCTX-M-121	ESBL_A
+blaCTX-M-123	ESBL_A
+blaCTX-M-124	ESBL_A
+blaCTX-M-126	ESBL_A
+blaCTX-M-12	ESBL_A
+blaCTX-M-131	ESBL_A
+blaCTX-M-132	ESBL_A
+blaCTX-M-134	ESBL_A
+blaCTX-M-136	ESBL_A
+blaCTX-M-139	ESBL_A
+blaCTX-M-13	ESBL_A
+blaCTX-M-142	ESBL_A
+blaCTX-M-14b	ESBL_A
+blaCTX-M-14	ESBL_A
+blaCTX-M-15	ESBL_A
+blaCTX-M-16	ESBL_A
+blaCTX-M-17	ESBL_A
+blaCTX-M-19	ESBL_A
+blaCTX-M-1	ESBL_A
+blaCTX-M-20	ESBL_A
+blaCTX-M-21	ESBL_A
+blaCTX-M-22	ESBL_A
+blaCTX-M-23	ESBL_A
+blaCTX-M-24	ESBL_A
+blaCTX-M-25	ESBL_A
+blaCTX-M-26	ESBL_A
+blaCTX-M-27	ESBL_A
+blaCTX-M-28	ESBL_A
+blaCTX-M-29	ESBL_A
+blaCTX-M-2	ESBL_A
+blaCTX-M-30	ESBL_A
+blaCTX-M-31	ESBL_A
+blaCTX-M-32	ESBL_A
+blaCTX-M-33	ESBL_A
+blaCTX-M-34	ESBL_A
+blaCTX-M-35	ESBL_A
+blaCTX-M-36	ESBL_A
+blaCTX-M-37	ESBL_A
+blaCTX-M-38	ESBL_A
+blaCTX-M-39	ESBL_A
+blaCTX-M-3	ESBL_A
+blaCTX-M-40	ESBL_A
+blaCTX-M-41	ESBL_A
+blaCTX-M-42	ESBL_A
+blaCTX-M-43	ESBL_A
+blaCTX-M-44	ESBL_A
+blaCTX-M-45	ESBL_A
+blaCTX-M-46	ESBL_A
+blaCTX-M-47	ESBL_A
+blaCTX-M-48	ESBL_A
+blaCTX-M-49	ESBL_A
+blaCTX-M-4	ESBL_A
+blaCTX-M-50	ESBL_A
+blaCTX-M-51	ESBL_A
+blaCTX-M-52	ESBL_A
+blaCTX-M-53	ESBL_A
+blaCTX-M-54	ESBL_A
+blaCTX-M-55	ESBL_A
+blaCTX-M-56	ESBL_A
+blaCTX-M-58	ESBL_A
+blaCTX-M-59	ESBL_A
+blaCTX-M-5	ESBL_A
+blaCTX-M-60	ESBL_A
+blaCTX-M-61	ESBL_A
+blaCTX-M-62	ESBL_A
+blaCTX-M-63	ESBL_A
+blaCTX-M-64	ESBL_A
+blaCTX-M-65	ESBL_A
+blaCTX-M-66	ESBL_A
+blaCTX-M-67	ESBL_A
+blaCTX-M-68	ESBL_A
+blaCTX-M-69	ESBL_A
+blaCTX-M-6	ESBL_A
+blaCTX-M-71	ESBL_A
+blaCTX-M-72	ESBL_A
+blaCTX-M-76	ESBL_A
+blaCTX-M-77	ESBL_A
+blaCTX-M-78	ESBL_A
+blaCTX-M-79	ESBL_A
+blaCTX-M-81	ESBL_A
+blaCTX-M-88	ESBL_A
+blaCTX-M-89	ESBL_A
+blaCTX-M-8	ESBL_A
+blaCTX-M-91	ESBL_A
+blaCTX-M-93	ESBL_A
+blaCTX-M-94	ESBL_A
+blaCTX-M-95	ESBL_A
+blaCTX-M-96	ESBL_A
+blaCTX-M-9	ESBL_A
+blaDHA-1	ESBL_M_AmpC
+blaDHA-1_JX495964	ESBL_M_AmpC
+blaDHA-2	ESBL_M_AmpC
+blaDHA-3	ESBL_M_AmpC
+blaDHA-5	ESBL_M_AmpC
+blaDHA-6	ESBL_M_AmpC
+blaDHA-7	ESBL_M_AmpC
+blaFOX-10	ESBL_M_AmpC
+blaFOX-1	ESBL_M_AmpC
+blaFOX-2	ESBL_M_AmpC
+blaFOX-3	ESBL_M_AmpC
+blaFOX-4	ESBL_M_AmpC
+blaFOX-5	ESBL_M_AmpC
+blaFOX-6	ESBL_M_AmpC
+blaFOX-7	ESBL_M_AmpC
+blaFOX-8	ESBL_M_AmpC
+blaFOX-9	ESBL_M_AmpC
+blaGES-10	ESBL_A
+blaGES-11	ESBL_A
+blaGES-12	ESBL_A
+blaGES-13	ESBL_CARBA
+blaGES-14	ESBL_CARBA
+blaGES-15	ESBL_CARBA
+blaGES-16	ESBL_A
+blaGES-17	ESBL_CARBA
+blaGES-18	ESBL_CARBA
+blaGES-19	ESBL_A
+blaGES-1	ESBL_A
+blaGES-20	ESBL_CARBA
+blaGES-21	ESBL_CARBA
+blaGES-22	ESBL_A
+blaGES-2	ESBL_CARBA
+blaGES-3	ESBL_A
+blaGES-4	ESBL_CARBA
+blaGES-5	ESBL_CARBA
+blaGES-6	ESBL_CARBA
+blaGES-7	ESBL_A
+blaGES-8	ESBL_A
+blaGES-9	ESBL_A
+blaGIM-1	ESBL_CARBA
+blaIMP-10	ESBL_CARBA
+blaIMP-13	ESBL_CARBA
+blaIMP-13_NG_049176	ESBL_CARBA
+blaIMP-19	ESBL_CARBA
+blaIMP-1_AB472901_2	ESBL_CARBA
+blaIMP-1	ESBL_CARBA
+blaIMP-20	ESBL_CARBA
+blaIMP-24	ESBL_CARBA
+blaIMP-25	ESBL_CARBA
+blaIMP-26	ESBL_CARBA
+blaIMP-3	ESBL_CARBA
+blaIMP-4	ESBL_CARBA
+blaIMP-5	ESBL_CARBA
+blaIMP-6	ESBL_CARBA
+blaIMP-7	ESBL_CARBA
+blaIMP-8	ESBL_CARBA
+blaKPC-10	ESBL_CARBA
+blaKPC-11	ESBL_CARBA
+blaKPC-12	ESBL_CARBA
+blaKPC-13	ESBL_CARBA
+blaKPC-14	ESBL_CARBA
+blaKPC-15	ESBL_CARBA
+blaKPC-16	ESBL_CARBA
+blaKPC-17_KC465200.1	ESBL_CARBA
+blaKPC-1	ESBL_CARBA
+blaKPC-2	ESBL_CARBA
+blaKPC-3	ESBL_CARBA
+blaKPC-4	ESBL_CARBA
+blaKPC-5	ESBL_CARBA
+blaKPC-6	ESBL_CARBA
+blaKPC-7	ESBL_CARBA
+blaKPC-8	ESBL_CARBA
+blaKPC-9	ESBL_CARBA
+blaLAT-1_1_X78117	ESBL_M_AmpC
+blaMIR-1	ESBL_M_AmpC
+blaMIR-2	ESBL_M_AmpC
+blaMIR-3	ESBL_M_AmpC
+blaMIR-4	ESBL_M_AmpC
+blaMIR-5	ESBL_M_AmpC
+blaMIR-6	ESBL_M_AmpC
+blaMOX-1	ESBL_M_AmpC
+blaMOX-2	ESBL_M_AmpC
+blaMOX-4	ESBL_M_AmpC
+blaNDM-10	ESBL_CARBA
+blaNDM-1	ESBL_CARBA
+blaNDM-2	ESBL_CARBA
+blaNDM-3	ESBL_CARBA
+blaNDM-4	ESBL_CARBA
+blaNDM-5	ESBL_CARBA
+blaNDM-6	ESBL_CARBA
+blaNDM-7	ESBL_CARBA
+blaNDM-8	ESBL_CARBA
+blaNDM-9	ESBL_CARBA
+blaOXA-10	OXA_wt_non-ESBL_Carba
+blaOXA-139	ESBL_CARBA
+blaOXA-146	ESBL_CARBA
+blaOXA-162	ESBL_CARBA
+blaOXA-163	ESBL_CARBA
+blaOXA-164	ESBL_CARBA
+blaOXA-165	ESBL_CARBA
+blaOXA-166	ESBL_CARBA
+blaOXA-167	ESBL_CARBA
+blaOXA-168	ESBL_CARBA
+blaOXA-169	ESBL_CARBA
+blaOXA-170	ESBL_CARBA
+blaOXA-171	ESBL_CARBA
+blaOXA-181	ESBL_CARBA
+blaOXA-1	OXA_wt_non-ESBL_Carba
+blaOXA-204	ESBL_CARBA
+blaOXA-207	ESBL_CARBA
+blaOXA-225	ESBL_CARBA
+blaOXA-232	ESBL_CARBA
+blaOXA-239	ESBL_CARBA
+blaOXA-23	ESBL_CARBA
+blaOXA-244	ESBL_CARBA
+blaOXA-245	ESBL_CARBA
+blaOXA-247	ESBL_CARBA
+blaOXA-24	ESBL_CARBA
+blaOXA-25	ESBL_CARBA
+blaOXA-26	ESBL_CARBA
+blaOXA-27	ESBL_CARBA
+blaOXA-370_KF900153.1	ESBL_CARBA
+blaOXA-48	ESBL_CARBA
+blaOXA-49	ESBL_CARBA
+blaOXA-58	ESBL_CARBA
+blaOXA-66	ESBL_CARBA
+blaOXA-72	ESBL_CARBA
+blaOXA-73	ESBL_CARBA
+blaOXA-96	ESBL_CARBA
+blaOXA-9	OXA_wt_non-ESBL_Carba
+blaPER-1	ESBL_A
+blaPER-1_KP054476	ESBL_A
+blaPER-2	ESBL_A
+blaPER-3	ESBL_A
+blaPER-4	ESBL_A
+blaPER-5	ESBL_A
+blaPER-6	ESBL_A
+blaPER-7	ESBL_A
+blaSHV-102	ESBL_A
+blaSHV-105	ESBL_A
+blaSHV-106	ESBL_A
+blaSHV-11	SHV_wt_non-ESBL
+blaSHV-120	ESBL_A
+blaSHV-123_GQ390805	ESBL_A
+blaSHV-126_GQ390808	ESBL_A
+blaSHV-128	ESBL_A
+blaSHV-129	ESBL_A
+blaSHV-12	ESBL_A
+blaSHV-134	ESBL_A
+blaSHV-13	ESBL_A
+blaSHV-141	ESBL_A
+blaSHV-152	ESBL_A
+blaSHV-153	ESBL_A
+blaSHV-15	ESBL_A
+blaSHV-160	ESBL_A
+blaSHV-163	ESBL_A
+blaSHV-164	ESBL_A
+blaSHV-165	ESBL_A
+blaSHV-16	ESBL_A
+blaSHV-18	ESBL_A
+blaSHV-1_b	SHV_wt_non-ESBL
+blaSHV-1	SHV_wt_non-ESBL
+blaSHV-25	ESBL_A
+blaSHV-28	SHV wt non-ESBL
+blaSHV-29	ESBL_A
+blaSHV-2a	ESBL_A
+blaSHV-2	ESBL_A
+blaSHV-30	ESBL_A
+blaSHV-31	ESBL_A
+blaSHV-33	SHV_wt_non-ESBL
+blaSHV-34	ESBL_A
+blaSHV-45	ESBL_A
+blaSHV-46	ESBL_A
+blaSHV-55	ESBL_A
+blaSHV-5	ESBL_A
+blaSHV-64	ESBL_A
+blaSHV-66	ESBL_A
+blaSHV-7	ESBL_A
+blaSHV-86	ESBL_A
+blaSPM-1	ESBL_CARBA
+blaTEM-101	ESBL_A
+blaTEM-102	ESBL_A
+blaTEM-106	ESBL_A
+blaTEM-107	ESBL_A
+blaTEM-109	ESBL_A
+blaTEM-10	ESBL_A
+blaTEM-111	ESBL_A
+blaTEM-113	ESBL_A
+blaTEM-114	ESBL_A
+blaTEM-115	ESBL_A
+blaTEM-118_AY130285.1	ESBL_A
+blaTEM-11	ESBL_A
+blaTEM-120	ESBL_A
+blaTEM-121	ESBL_A
+blaTEM-123	ESBL_A
+blaTEM-124	ESBL_A
+blaTEM-125	ESBL_A
+blaTEM-129	ESBL_A
+blaTEM-12	ESBL_A
+blaTEM-130	ESBL_A
+blaTEM-131	ESBL_A
+blaTEM-132	ESBL_A
+blaTEM-133	ESBL_A
+blaTEM-134	ESBL_A
+blaTEM-136	ESBL_A
+blaTEM-137	ESBL_A
+blaTEM-138	ESBL_A
+blaTEM-139	ESBL_A
+blaTEM-142	ESBL_A
+blaTEM-143	ESBL_A
+blaTEM-144	ESBL_A
+blaTEM-147	ESBL_A
+blaTEM-149	ESBL_A
+blaTEM-151	ESBL_A
+blaTEM-152	ESBL_A
+blaTEM-153	ESBL_A
+blaTEM-154	ESBL_A
+blaTEM-155	ESBL_A
+blaTEM-158	ESBL_A
+blaTEM-15	ESBL_A
+blaTEM-167	ESBL_A
+blaTEM-177	ESBL_A
+blaTEM-17	ESBL_A
+blaTEM-187	ESBL_A
+blaTEM-188	ESBL_A
+blaTEM-193	ESBL_A
+blaTEM-195	ESBL_A
+blaTEM-197	ESBL_A
+blaTEM-199	ESBL_A
+blaTEM-1	TEM_wt_non-ESBL
+blaTEM-205	ESBL_A
+blaTEM-211	ESBL_A
+blaTEM-21	ESBL_A
+blaTEM-22	ESBL_A
+blaTEM-24	ESBL_A
+blaTEM-28	ESBL_A
+blaTEM-29	ESBL_A
+blaTEM-2	TEM_wt_non-ESBL
+blaTEM-3	ESBL_A
+blaTEM-42_X98047.1	ESBL_A
+blaTEM-43	ESBL_A
+blaTEM-47	ESBL_A
+blaTEM-48	ESBL_A
+blaTEM-49	ESBL_A
+blaTEM-52B	ESBL_A
+blaTEM-52C	ESBL_A
+blaTEM-53	ESBL_A
+blaTEM-60	ESBL_A
+blaTEM-63	ESBL_A
+blaTEM-68	ESBL_A
+blaTEM-6	ESBL_A
+blaTEM-71	ESBL_A
+blaTEM-72	ESBL_A
+blaTEM-85	ESBL_A
+blaTEM-86	ESBL_A
+blaTEM-87	ESBL_A
+blaTEM-88	ESBL_A
+blaTEM-89_AY039040	ESBL_A
+blaTEM-8	ESBL_A
+blaTEM-91	ESBL_A
+blaTEM-92	ESBL_A
+blaTEM-93	ESBL_A
+blaTEM-94	ESBL_A
+blaTEM-99	ESBL_A
+blaVCC-1	ESBL_M_AmpC
+blaVEB-1	ESBL_A
+blaVEB-2	ESBL_A
+blaVEB-3	ESBL_A
+blaVEB-4	ESBL_A
+blaVEB-5	ESBL_A
+blaVEB-6	ESBL_A
+blaVEB-7	ESBL_A
+blaVEB-8	ESBL_A
+blaVIM-10	ESBL_CARBA
+blaVIM-11	ESBL_CARBA
+blaVIM-12	ESBL_CARBA
+blaVIM-13	ESBL_CARBA
+blaVIM-14	ESBL_CARBA
+blaVIM-15	ESBL_CARBA
+blaVIM-16	ESBL_CARBA
+blaVIM-17	ESBL_CARBA
+blaVIM-18	ESBL_CARBA
+blaVIM-19	ESBL_CARBA
+blaVIM-1	ESBL_CARBA
+blaVIM-20	ESBL_CARBA
+blaVIM-23	ESBL_CARBA
+blaVIM-24	ESBL_CARBA
+blaVIM-25	ESBL_CARBA
+blaVIM-26	ESBL_CARBA
+blaVIM-27	ESBL_CARBA
+blaVIM-28	ESBL_CARBA
+blaVIM-29	ESBL_CARBA
+blaVIM-2	ESBL_CARBA
+blaVIM-30	ESBL_CARBA
+blaVIM-31	ESBL_CARBA
+blaVIM-32	ESBL_CARBA
+blaVIM-33	ESBL_CARBA
+blaVIM-34	ESBL_CARBA
+blaVIM-35	ESBL_CARBA
+blaVIM-36	ESBL_CARBA
+blaVIM-37	ESBL_CARBA
+blaVIM-38	ESBL_CARBA
+blaVIM-3	ESBL_CARBA
+blaVIM-4	ESBL_CARBA
+blaVIM-5	ESBL_CARBA
+blaVIM-6	ESBL_CARBA
+blaVIM-8	ESBL_CARBA
+blaVIM-9	ESBL_CARBA
+erm41_10_28T	"Subsp. abscessus; Inducible macrolide resistance"
+erm41_11_28T	"Subsp. bolletii; Inducible macrolide resistance"
+erm41_12_28T	"Subsp. abscessus; Inducible macrolide resistance"
+erm41_1_28T	"Subsp. abscessus; Inducible macrolide resistance"
+erm41_13_28T	"Subsp. bolletii; Inducible macrolide resistance"
+erm41_14_28C	"Subsp. abscessus; Genotypically macrolide susceptible"
+erm41_15_truncated	"Subsp. massiliense; Genotypically macrolide susceptible"
+erm41_16_28T	"Subsp. abscessus; Inducible macrolide resistance"
+erm41_2_28C	"Subsp. abscessus; Genotypically macrolide susceptible"
+erm41_3_truncated	"Subsp. massiliense; Genotypically macrolide susceptible"
+erm41_4_28T	"Subsp. bolletii; Inducible macrolide resistance"
+erm41_5_28T	"Subsp. abscessus; Inducible macrolide resistance"
+erm41_6_28T	"Subsp. abscessus; Inducible macrolide resistance"
+erm41_7_28T	"Subsp. bolletii; Inducible macrolide resistance"
+erm41_8_28T	"Subsp. abscessus; Inducible macrolide resistance"
+erm41_9_28T	"Subsp. bolletii; Inducible macrolide resistance"
+hsp65_10	Subsp. bolletii
+hsp65_11	Subsp. abscessus
+hsp65_12	Subsp. abscessus
+hsp65_13	Subsp. abscessus
+hsp65_14	Subsp. abscessus
+hsp65_15	Subsp. abscessus
+hsp65_1	Subsp. abscessus
+hsp65_2	Subsp. massiliense
+hsp65_3	Subsp. bolletii
+hsp65_4	Subsp. massiliense
+hsp65_5	Subsp. bolletii
+hsp65_6	Subsp. abscessus
+hsp65_7	Subsp. abscessus
+hsp65_8	Subsp. bolletii
+hsp65_9	M. chelonae
+mecA_10_AB512767	MRSA_mecA
+mecA_14_AB505630	MRSA_mecA
+mecA_15_AB505628	MRSA_mecA
+mecA_4_AB033763	MRSA_mecA
+mecA_7_BA000018	MRSA_mecA
+mecC_1_FR823292	MRSA_mecC
+mecC_2_FR821779_mecA_6	MRSA_mecC
+PVL_AB331244	PVL
+PVL_EU368820	PVL
+PVL_FJ821791	PVL
+PVL_FJ895584	PVL
+PVL_HM584701	PVL
+PVL_HM584703	PVL
+PVL_HM584704	PVL
+PVL_HM584706	PVL
+PVL_HM584708	PVL
+PVL_JN635504	PVL
+PVL_JN635506	PVL
+PVL_JN635507	PVL
+PVL_JN635508	PVL
+PVL_JN635510	PVL
+rpoB_10	Subsp. massiliense
+rpoB_11	Subsp. massiliense
+rpoB_12	Subsp. bolletii
+rpoB_13	Subsp. abscessus
+rpoB_1	Subsp. abscessus
+rpoB_2	Subsp. abscessus
+rpoB_3	Subsp. abscessus
+rpoB_4	Subsp. abscessus
+rpoB_5	Subsp. bolletii
+rpoB_6	Subsp. massiliense
+rpoB_7	Subsp. massiliense
+rpoB_8	Subsp. massiliense
+rpoB_9	Subsp. massiliense
+rrl_abscessus_chelonae_A2058C	Macrolide resistant
+rrl_abscessus_chelonae_A2058G	Macrolide resistant
+rrl_abscessus_chelonae_A2058T	Macrolide resistant
+rrl_abscessus_chelonae_A2059C	Macrolide resistant
+rrl_abscessus_chelonae_A2059G	Macrolide resistant
+rrl_abscessus_chelonae_A2059T	Macrolide resistant
+rrl_abscessus_chelonae_WT	Wildtype rrl
+rrl_avium_WT	Wildtype rrl
+rrl_intracellulare_chimaera_WT	Wildtype rrl
+rrs_A1408G	Aminoglycoside resistant
+rrs_A1408G_avium	Aminoglycoside resistant
+rrs_A1408G_chelonae	Aminoglycoside resistant
+rrs_A1408G_intraC_chim	Aminoglycoside resistant
+rrs_C1409T	Aminoglycoside resistant
+rrs_T1406A	Aminoglycoside resistant
+rrs_WT_avium	Wildtype rrs
+rrs_WT_chelonae	Wildtype rrs
+rrs_WT_intraC_chim	Wildtype rrs
+rrs_WT	Wildtype rrs
+VanA_1_FJ866609	VanA vancomycin resistance
+VanA_2_M97297	VanA vancomycin resistance
+VanA_3_MG460318_1	VanA vancomycin resistance
+VanB_1_AF192329	VanB vancomycin resistance
+VanB_2_AY958220_1	VanB vancomycin resistance
+VanB_3_U00456_1	VanB vancomycin resistance
+VanB_4_NG_048332_1	VanB vancomycin resistance
+VanB_5_NG_048333_1	VanB vancomycin resistance
+VanB_6_AY655712_1	VanB vancomycin resistance
+VanB_7_NG_048334_1	VanB vancomycin resistance
+VanB_8_AY655719_1	VanB vancomycin resistance
+VanB_9_NG_048339_1	VanB vancomycin resistance
+VanC_10_NG_048343_1	VanC vancomycin resistance
+VanC_11_NG_048345_1	VanC vancomycin resistance
+VanC_12_NG_048354_1	VanC vancomycin resistance
+VanC_13_NG_048355_1	VanC vancomycin resistance
+VanC_14_NG_048356_1	VanC vancomycin resistance
+VanC_15_NG_048357_1	VanC vancomycin resistance
+VanC_16	VanC vancomycin resistance
+VanC_17	VanC vancomycin resistance
+VanC_1_NG_048344_1	VanC vancomycin resistance
+VanC_2_NG_048346_1	VanC vancomycin resistance
+VanC_3_NG_048347_1	VanC vancomycin resistance
+VanC_4_NG_048348_1	VanC vancomycin resistance
+VanC_5_NG_048349_1	VanC vancomycin resistance
+VanC_6_NG_048350_1	VanC vancomycin resistance
+VanC_7_NG_048351_1	VanC vancomycin resistance
+VanC_8_NG_048352_1	VanC vancomycin resistance
+VanC_9_NG_048353_1	VanC vancomycin resistance
