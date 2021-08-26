@@ -52,18 +52,23 @@ archive_ipynbs:
 ## 2. Remove automatically added ":filter.+" text from fasta headers
 ## 3. Remove duplicate sequences
 ## 4. Rename duplicate fasta headers
-## 5. Remove from renamed duplicated fasta headers difficult to parse duplicated
+## 5. Remove parentheses from fasta headers
+## 6. Remove from renamed duplicated fasta headers difficult to parse duplicated
 ## information and exchange it with "dupID"-text
 prepare_genes:
 	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f $(RAW_SEQS) | \
 	$(SEQKIT) replace -p ":filter.+" | \
 	$(SEQKIT) rmdup --by-seq | \
 	$(SEQKIT) rename -n | \
+	tr -d '()' | \
+	tr '/' '_' | \
 	$(SEQKIT) replace -p '(^.+)\s\S+' -r '$$1 dupID' > $(DIAG_GENES))
 
-## remove_dup_phenos: Remove duplicate rows from raw phenotypes csv
-remove_dup_phenos:
-	@(tail -n +2 $(RAW_PHENOS) | sort | uniq > $(PHENOS)) # Remove duplicate entries
+	@(tail -n +2 $(RAW_PHENOS) | \
+	sort | \
+	uniq | \
+	tr -d '()' | \
+	tr '/' '_' > $(PHENOS)) 
 	@(sed -i '1 i\
 	name\tphenotype' $(PHENOS)) # Insert tsv header
 
