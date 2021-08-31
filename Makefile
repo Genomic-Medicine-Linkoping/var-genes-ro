@@ -25,9 +25,9 @@ TEMP_DIAG_GENES = temp_diagnostic_genes.fa
 RAW_PHENOS = raw/Diagnostic_genes_phenotypes.tsv
 PHENOS = proc/phenotypes.tsv
 # Final fasta files
-CODING = coding.fa
-NONC = non-coding.fa
-BOTH = coding_non-coding.fa
+CODING = final/coding.fa
+NONC = final/non-coding.fa
+BOTH = final/coding_non-coding.fa
 
 all: prepare_genes prepare_phenos exec_ipynbs archive_ipynbs
 	@echo "Created all intermediary and final files."
