@@ -29,7 +29,7 @@ CODING = coding.fa
 NONC = non-coding.fa
 BOTH = coding_non-coding.fa
 
-all: prepare_genes remove_dup_phenos exec_ipynbs archive_ipynbs
+all: prepare_genes prepare_phenos exec_ipynbs archive_ipynbs
 	@echo "Created all intermediary and final files."
 
 ## exec_ipynbs: Run Jupyter notebooks in order to produce final files
@@ -80,7 +80,7 @@ check_files:
 
 ## find_dups: Compare the fasta files
 find_dups: prepare_genes
-	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f raw/Diagnostic_genes_v3.fa | \
+	@($(CONDA_ACTIVATE) ; $(FASTACLEAN) -f $(RAW_SEQS) | \
 	$(SEQKIT) replace -p ":filter.+" | \
 	$(SEQKIT) rename -n > $(TEMP_DIAG_GENES) ; \
 	$(FASTADIFF) -1 $(TEMP_DIAG_GENES) -2 $(DIAG_GENES) ; \
